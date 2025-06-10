@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Abdourahmane BÂ DIA</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-6 text-center">
+    <img src="images/photo_profil.jpg" alt="Photo de profil" class="w-32 h-32 rounded-full mx-auto mb-4()">
+    <h1 class="text-3xl font-bold">Abdourahmane BÂ DIA</h1>
+    <p class="text-lg">Développeur Web | Consultant MEL | Entrepreneur</p>
+    <p class="mt-2 text-sm">Dakar, Sénégal | abdourahmanebadia@gmail.com | +221 78 184 14 03</p>
+    <a href="docs/CV_ DIA Abdourahmane_Ba.2025,DK.pdf" download class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">📄 Télécharger mon CV</a>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-blue-100 text-center py-4">
+    <a href="#about" class="mx-2 hover:underline">À propos</a>
+     <a href="#Certification" class="mx-2 hover:underline">Certification</a>
+    <a href="#skills" class="mx-2 hover:underline">Compétences</a>
+    <a href="#projects" class="mx-2 hover:underline">Projets</a>
+    <a href="#hobbies" class="mx-2 hover:underline">Hobbies</a>
+    <a href="#contact" class="mx-2 hover:underline">Contact</a>
+  </nav>
+
+  <!-- À propos -->
+  <section id="about" class="container mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-4">À propos</h2>
+    <p>Développeur Web junior passionné, avec une expérience confirmée dans le suivi-évaluation et la gestion de projets. Je mets mes compétences au service de solutions numériques accessibles, utiles et durables.</p>
+  </section>
+
+  <!-- certification -->
+  <section id="Certification" class="container mx-auto p-6 bg-white shadow rounded my-6">
+    <h2 class="text-2xl font-semibold mb-4"> Certification en Developpement Web</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li> Developpement Web niveau débutant/ DCLIC Francophie seesion mai 2025 </li>
+    </ul>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills" class="container mx-auto p-6 bg-white shadow rounded my-6">
+    <h2 class="text-2xl font-semibold mb-4">Compétences techniques</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li><strong>Langages :</strong> HTML, CSS, JavaScript, Python (bases)</li>
+      <li><strong>Librairies & Frameworks :</strong> Bootstrap, TailwindCSS, React.js (débutant)</li>
+      <li><strong>Outils :</strong> Git, GitHub, VS Code, Figma</li>
+      <li><strong>Langues :</strong> Français, Anglais, Wolof, Pulaar</li>
+    </ul>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects" class="container mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-4">Projets web réalisés</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="border p-4 shadow rounded">
+        <img src="images/Project1.jpeg" alt="Projet A" class="mb-2 rounded">
+        <h3 class="text-xl font-bold">🌍 Projet Html synthèse "</h3>
+        <p> – HTML/CSS/JS</p>
+      </div>
+      <div class="border p-4 shadow rounded">
+        <img src="images/project2.jpeg" alt="Selecteurs CSS Avancés " class="mb-2 rounded">
+        <h3 class="text-xl font-bold">📅 Projet exercice Selecteurs CSS Avancés</h3>
+        <p> – HTML/CSS</p>
+      </div>
+      <div class="border p-4 shadow rounded">
+        <img src="images/project3.jpeg" alt="Projet Activités 5 Calculateur de Prêt hypothécaire" class="mb-2 rounded">
+        <h3 class="text-xl font-bold">📊 Calculateur de prêt hypothécaire</h3>
+        <p>Calculateur – HTML/JavaScript</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies" class="container mx-auto p-6 bg-white shadow rounded my-6">
+    <h2 class="text-2xl font-semibold mb-4">Hobbies & Activités sportives</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Lecture sur la transformation digitale</li>
+      <li>Marathon, course à pied, fitness,</li>
+      <li>Football,basketball et randonnées en nature</li>
+      <li>Voyages et découvertes culturelles</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-4">Formulaire de contact</h2>
+    <form id="contactForm" class="space-y-4">
+      <input type="text" name="name" id="name" placeholder="Votre nom" required class="w-full p-2 border rounded">
+      <input type="email" name="email" id="email" placeholder="Votre e-mail" required class="w-full p-2 border rounded">
+      <textarea name="message" id="message" placeholder="Votre message" required class="w-full p-2 border rounded"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Envoyer</button>
+      <p id="formStatus" class="text-green-600"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center text-sm py-4">
+    © 2025 Abdourahmane BÂ DIA. Tous droits réservés.
+  </footer>
+</body>
+</html>
+
